@@ -1,92 +1,19 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
-   
-<style type="text/css">
-*{margin:0;padding:0;}
-html{height:100%;}
-body{
-min-height:100%;
-_height:100%;
-position:relative;
-}
-#head{background:#ccc;}
-#content{padding-bottom:160px;}
-#foot{position:fixed;bottom:10px;height:100px;width:100%;overflow:hidden;background:#06F;}
-</style>
-</head>
-<body>
-    <button id="b">click me</button>
-    <p id="p"></p>
-   <a href="page.html">跳转</a>
-    <script>
-        document.getElementById("b").onclick=function() {
-            document.getElementById("p").innerHTML="clicked";
-        }
-        
-    </script>
-<div id="head">
-    <h1>head</h1>
-</div>
-<div id="content">
-    <h1>content</h1>
-    <p>示例文字</p><p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>    <p>示例文字</p><p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>    <p>示例文字</p><p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>    <p>示例文字</p><p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>    <p>示例文字</p><p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>    <p>示例文字</p><p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>    <p>示例文字</p><p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>    <p>示例文字</p><p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>    <p>示例文字</p><p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p><p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-    <p>示例文字</p>
-</div>
-<div id="foot">foot</div>
-</body>
-
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>读取json</title>
+		<script>
+		var scr=document.createElement("script");
+		scr.src="1.json"
+		document.head.appendChild(scr);
+		</script>
+	</head>
+	<body>
+		<script>
+			document.body.onload=function(){
+			document.body.innerText=index.tit+" "+index.name+" "+index.age;
+			}
+		</script>
+	</body>
 </html>

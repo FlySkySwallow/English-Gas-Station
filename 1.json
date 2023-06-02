@@ -1,0 +1,6 @@
+var index={
+tit:"hello",
+name:"world",
+age:"哇哈",
+url:""
+}
