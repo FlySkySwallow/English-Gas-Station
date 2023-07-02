@@ -1,0 +1,35 @@
+body {
+margin:0;
+padding:0;
+}
+
+#body-nav {
+background-color:#78D1FE;
+}
+
+#body-nav div {
+margin:0;
+padding-left:10px;
+padding-top:10px;
+padding-bottom:10px;
+
+}
+
+#body-nav #span1 {
+color:#4a00fe;
+text-shadow:2px 2px 2px #a4a4bd;
+font-weight:bold;
+font-size:24px;
+padding-left:10px;
+}
+
+#body-nav #span2{
+color:blue;
+font-size:14px;
+padding-left:30px;
+font-weight:bold;
+text-shadow:1px 1px 1px #eeeeee;
+}
+
+
+
