@@ -1,4 +1,4 @@
-infoJSON = "([{'desc':'人称代词；主语、谓语、宾语；查词典', 'files':[ {'address': '../static/raw/pdf/2023暑期英语英语练习(1).pdf', 'name': '2023暑期英语英语练习(1) 题目.pdf'} , {'address': '../static/raw/pdf/2023暑期英语英语练习(1) 答案.pdf', 'name': '2023暑期英语英语练习(1) 答案.pdf'} , {'address': '../static/raw/audio/2023暑期英语英语练习(1) 听力材料.mp3', 'name': '2023暑期英语英语练习(1) 听力材料.mp3'} ]   }, 	{'desc':'物主代词、反身代词、指示代词', 'files':[ {'address': '../static/raw/pdf/2023暑期英语英语练习(2).pdf', 'name': '2023暑期英语英语练习(2) 题目.pdf'} , {'address': 'none', 'name': '2023暑期英语英语练习(2) 答案.pdf'} ]   }  ])";
+infoJSON = "([{'desc':'人称代词；主语、谓语、宾语；查词典', 'files':[ {'address': '../static/raw/pdf/2023暑期英语练习(1).pdf', 'name': '2023暑期英语练习(1) 题目.pdf'} , {'address': 'none', 'name': '2023暑期英语练习(1) 答案.pdf'} , {'address': '../static/raw/audio/2023暑期英语练习(1) 听力材料.mp3', 'name': '2023暑期英语练习(1) 听力材料.mp3'} ]}       ])";
 
 info = eval(infoJSON);
 selectedRow = 0;
@@ -70,6 +70,19 @@ function downloadFile(address,name) {
 if (address == 'none')
 alert('该文件暂未公开，无法查看。');
 else {
+// 跳转至查看文件的页面
+document.cookie="egs_order=view_file;egs_file_address="+address.replace('/','\\\\')+";egs_file_name="+name;
+var element = document.createElement('a');
+var t=address.split('.');
+var fileType=t[t.length-1];
+element.setAttribute('href', "view_file_"+fileType+".html");
+element.setAttribute('target', "_blank");
+element.style.display = 'none';
+document.body.appendChild(element);
+element.click();
+document.body.removeChild(element);
+
+/*
  var element = document.createElement('a');
   element.setAttribute('href', address.replace('/','\\\\'));
   element.setAttribute('download', name);
@@ -77,6 +90,7 @@ else {
   document.body.appendChild(element);
   element.click();
   document.body.removeChild(element);
+*/
 }
 }
 
