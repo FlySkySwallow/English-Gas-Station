@@ -1,7 +1,7 @@
 table[id="2023exercise"] {
 border:1px solid black;
 width:100%;
-padding:15px;
+padding:10px;
 }
 
 th, tr td {
@@ -26,7 +26,7 @@ text-align:center;
 div[id="table-div"] {
 width=100%;
 margin-top:40px;
-margin-left:10%;
-margin-right:10%;
+margin-left:5%;
+margin-right:5%;
 
 }
