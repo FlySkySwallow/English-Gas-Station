@@ -71,7 +71,7 @@ if (address == 'none')
 alert('该文件暂未公开，无法查看。');
 else {
 // 跳转至查看文件的页面
-document.cookie="egs_order=view_file;egs_file_address=\""+address.replace('/','\\\\')+"\";egs_file_name=\""+name+"\"";
+document.cookie="file_address=\""+address+"\"";
 var element = document.createElement('a');
 var t=address.split('.');
 var fileType=t[t.length-1];

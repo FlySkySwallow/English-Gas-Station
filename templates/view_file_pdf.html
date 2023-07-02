@@ -5,16 +5,6 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <!--<meta http-equiv="refresh" content="2">-->
 <title>查看文件</title>
-<link rel="stylesheet" type="text/css" href="..\static\css\index.css">
-<link rel="stylesheet" type="text/css" href="..\static\css\index-item.css">
-
-<script type="text/javascript" src="..\static\js\jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="..\static\js\jquery.media.js"></script>
-<script type="text/javascript">
-    $(function() {
-        $('a.media').media({width:'100%', height:'900px'});
-    });
-</script>
 
 <style type="text/css">
 #download {
@@ -36,14 +26,21 @@ margin-bottom:30px;
 <button class="back" onclick="downloadFile()">下载文件</button>
 </div>
 
-<!--正文-->
-<a class="media" href="..\static\raw\pdf\2023暑期英语练习(1).pdf"></a>
+<img id="pdf_img" width="100%">
 
 <script type="text/javascript">
-var cookie=document.cookie.split(";");
-alert(document.cookie);
-if (cookie[0].split("=")[1]=="view_file")
-{
+window.onload=function() {
+var cookie_address=document.cookie.split(";")[0].split("=")[1];
+var raw_address=cookie_address.replace("/","\\\\");
+var name=cookie_address.split("/")[-1].replace(".pdf",".png");
+var png_name=("../static/raw/img/"+name).replace("/","\\\\");
+alert(cookie_address);
+alert(raw_address);
+alert(name);
+alert(png_name);
+};
+
+function downloadFile() {
 var address=cookie[1].split("=")[1];
 var name=cookie[2].split("=")[1];
 var element = document.createElement('a');
