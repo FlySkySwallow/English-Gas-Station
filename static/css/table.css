@@ -13,6 +13,11 @@ td:first-child, td:last-child, th:first-child, th:last-child {
 background-color:#ccccff;
 }
 
+#bu {
+color:blue;
+text-decoration:underline;
+}
+
 td:nth-child(2), th:nth-child(2) {
 background-color:#ffffcc;
 
