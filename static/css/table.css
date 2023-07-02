@@ -1,0 +1,32 @@
+table[id="2023exercise"] {
+border:1px solid black;
+width:100%;
+padding:15px;
+}
+
+th, tr td {
+border:1px solid black;
+padding:8px;
+}
+
+td:first-child, td:last-child, th:first-child, th:last-child {
+background-color:#ccccff;
+}
+
+td:nth-child(2), th:nth-child(2) {
+background-color:#ffffcc;
+
+}
+
+td {
+text-align:center;
+}
+
+
+div[id="table-div"] {
+width=100%;
+margin-top:40px;
+margin-left:10%;
+margin-right:10%;
+
+}

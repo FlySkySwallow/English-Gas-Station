@@ -31,5 +31,27 @@ font-weight:bold;
 text-shadow:1px 1px 1px #eeeeee;
 }
 
+a[class*="none-decoration"]:link {
+text-decoration:none;
+color:black;
+}
 
+a[class*="none-decoration"]:visited {
+text-decoration:none;
+color:black;
+}
 
+a[class*="none-decoration"]:active {
+text-decoration:none;
+color:black;
+}
+
+button[class="back"] {
+position:relative;
+margin-top:30px;
+left:10%;
+font-size:14px;
+padding:10px;
+border:solid 1px black;
+border-radius:10px;
+}
